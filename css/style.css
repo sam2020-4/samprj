@@ -1,0 +1,168 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:century gothic;
+}
+
+.container{
+	display:grid;
+	grid-template-columns: 1fr; 
+	padding-left:10px;
+	padding-right:10px;
+} 
+
+.header-wrapper{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../coast.jfif);
+	height:60vh;
+	background-size:cover;
+	background-position:center;	
+	background-repeat:no-repeat;
+}
+
+.logo{
+	float:left; 
+	width:250px;
+	height:auto;
+	max-width:100px;
+	padding:10px;
+}
+
+/*nav styles*/
+.nav-wrapper{
+	display: flex;
+	justify-content:space-between; 
+	padding:20px;
+}
+
+.right-side{
+	display:flex;
+}
+
+.nav-wrapper > .right-side > div {
+	margin-right:20px;
+	font-size:0.9em;
+	text-transform:uppercase; 
+}
+
+.nav-link-wrapper {
+	height:22px;
+	border-bottom:1px solid transparent;
+	transition:border-bottom 0.5s;	
+}
+
+.nav-link-wrapper a{
+	color:#fff;
+	text-decoration:none;
+	transition:color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+	border-bottom:1px solid black; 
+}
+
+.nav-link-wrapper a:hover{
+	color:red;
+}
+
+.active-nav-link{
+	border-bottom:1px solid black;
+}
+
+.active-nav-link a {
+	color:black !important;
+}
+
+/* title-wrapper styles*/
+.title-wrapper{
+	position:absolute;
+	top:30%;
+	left:30%;
+	transform:translate(30%,-30%);
+}
+
+.title-wrapper h1{
+	color:#fff;
+	font-size:30px;
+}
+
+.button-wrapper{
+	position:absolute;
+	top:40%;
+	left:30%;
+	transform:translate(40%,-30%);	
+}
+
+.btn{
+	border:1px solid #fff;
+	padding:10px 30px;
+	color:#fff;
+	text-decoration:none;
+	transform:0.6s ease;
+}
+
+.btn:hover{
+	background-color:#fff; 
+	color:#000;
+}
+
+/*colorchange*/
+.colorchange{
+	animation: colorchangesolutions 1s infinite;	
+}
+@keyframes colorchangesolutions{
+	0 %{color:red;}
+	25%{color:#bf55ec;}
+	50%{color:white;}
+	100%{color:green;}	
+}
+
+/* styles for about row */
+.abt-column-wrapper{
+	display:grid;
+	grid-template-columns: 0.3fr 0.7fr;
+}
+
+.profile-image-wrapper img{
+	width:100%;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+}
+
+.profile-content-wrapper{
+	padding:30px;
+	padding-top:10px;
+}
+
+.profile-content-wrapper h3{
+	color:lightseagreen;
+	text-transform:uppercase;
+}
+
+/* styles for about row */
+.services-column-wrapper{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer-wrapper*/
+.footer-wrapper{
+	width:100%; 
+	color:green;	
+	height:auto;
+	float:center;
+	background-color:#111;
+	text-align:center;
+}
+
